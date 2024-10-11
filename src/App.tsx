@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Alert from './components/Alert';
 import Button from './components/Button';
 import ListGroup from './components/ListGroup';
+import ExpandableText from './components/ExpandableText';
 
 function App() {
   const [isShowSuccess, setIsShowSuccess] = useState(false);
@@ -49,6 +50,7 @@ function App() {
           Error
         </Button>
       </div>
+      <ExpandableText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus enim ad. Optio quidem hic iusto labore odio ad id expedita unde temporibus qui animi laboriosam, ea illo quae asperiores voluptatum voluptatibus. Tempore eos dolor nesciunt quaerat. Repudiandae, eaque quaerat dolore, aut commodi corrupti blanditiis nulla quisquam consequuntur excepturi deserunt sapiente libero natus nobis rem repellendus fugiat ea, fugit maiores ut dignissimos. Ab libero ipsum veniam, inventore nam minus nulla facilis perspiciatis recusandae nisi quibusdam fugit consequatur deserunt illum ipsam ullam a expedita dolorum doloremque maxime reprehenderit dolor dolorem? Eaque at ex asperiores adipisci in qui hic quas voluptatum labore.</ExpandableText>
       <ListGroup heading="List" items={items} onSelectItem={() => handleSelectItem} />
     </div>
   );
